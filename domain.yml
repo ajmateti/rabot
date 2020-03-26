@@ -1,0 +1,86 @@
+intents:
+  - goodbye
+  - affirm
+  - deny
+  - mood_unhappy
+  - bot_challenge
+  - greetings
+  - request disease
+  - request information
+
+responses:
+    utter_greet:
+      - 'hello {name}!'
+      - 'How may I assist you?'
+      - 'Hello !'
+    utter_howcanhelp:
+      - 'Hello {name}! How can I help?'
+      - 'Hi,I am your health care assistant.How can I help you?'
+    utter_goodbye:
+      - 'Bye bye'
+      - 'Have a nice day'
+      - 'Take care of your health.Bye!'
+    utter_ask_symptoms:
+      - 'Sorry to hear that.From when are you having these symptoms?'
+      - 'Do you have any of these symptoms?'
+      - 'Sorry to hear that.Do you also have fever?'
+      - 'please tell me if you have any other {symptom1},{symptom2}'
+    utter_ask_age:
+      - 'How old are you?'
+    utter_book_appointment:
+      - 'Do you want to make an appointment with our doctor?'
+    utter_default:
+      - "sorry,I didn't get that. can you rephrase it"
+      - "looks like your symptoms are out of scope this chat bot. shall I book your appointment to our doctor. "
+    utter_submit:
+      - "{name},there is a possibility that you have {disease}. {symptom},{symptom1},{symptom2} are symptoms of {disease}"
+    utter_ask_name:
+      - "please tell me your name?"
+    utter_did_that_help:
+      - text: "Did that help you?"
+    utter_happy:
+      - text: "Great, carry on!"
+    utter_iamabot:
+      - text: "I am a bot, powered by Rasa."
+
+slots:
+  symptom:
+    type: unfeaturized
+  symptom1:
+    type: unfeaturized
+  symptom2:
+    type: unfeaturized
+  name:
+    type: unfeaturized
+
+
+entities:
+  - symptom
+  - symptom1
+  - symptom2
+  - name
+  - disease
+  - medicine
+#forms:
+ # - symptoms_form
+
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_age
+  - utter_ask_symptoms
+  - action_disease
+  - utter_default
+  - utter_howcanhelp
+  - utter_ask_name
+  - utter_book_appointment
+  - symptoms_form
+  - utter_submit
+  - utter_did_that_help
+  - utter_happy
+  - utter_iamabot
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
