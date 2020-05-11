@@ -1,18 +1,10 @@
 
-## say goodbye
-* goodbye
-   - utter_goodbye
-
 ## bot challenge
 * bot_challenge
    - utter_iamabot
-* greetings
-   - utter_howcanhelp
-* request information
-   - action_disease
-   - utter_submit
 * goodbye
    - utter_goodbye
+
 ## story_003
 * greetings
    - utter_greet
@@ -46,41 +38,29 @@
    - utter_goodbye
 ## story_006
  * thanks
-   - utter_thanks 
+   - utter_thanks
+    
 ## interactive_story_1
 * greetings
    - utter_greet
    - utter_ask_name
-* request disease,prescription{"symptom1": "cold"}
+* request disease{"symptom1": "cold"}
    - slot{"symptom1": "cold"}
+   - utter_ask_symptoms
+* request disease{"symptom1": "light body pains"}
+   - slot{"symptom1": "light body pains"}
    - action_disease
 * accept
    - utter_goodbye
 
 ## interactive_story_1
-* request disease,prescription{"symptom": "fever"}
-   - slot{"symptom": "fever"}
-   - action_disease
-* thanks
-   - utter_thanks
-
-## interactive_story_1
-* request disease{"symptom": "headache"}
-   - slot{"symptom": "headache"}
-   - action_disease
-
-## interactive_story_2
-* request disease{"symptom": "headache"}
-   - slot{"symptom": "headache"}
-   - action_disease
-## interactive_story_3
 * greetings
    - utter_greet
    - utter_ask_name
 * greetings{"name": "harish"}
    - slot{"name": "harish"}
    - utter_howcanhelp
-* request disease,prescription{"symptom": "headache"}
+* request disease{"symptom": "headache"}
    - slot{"symptom": "headache"}
    - action_disease
 * goodbye
@@ -118,3 +98,67 @@
     - slot{"disease": "Conjunctivitis (pink eye)"}
 * thanks
     - utter_thanks
+
+## interactive_story_1
+* greetings
+    - utter_greet
+    - utter_ask_name
+* give Information{"name": "rajesh"}
+    - slot{"name": "rajesh"}
+    - utter_howcanhelp
+* request disease{"symptom1": "vomitings", "symptom": "headache"}
+    - slot{"symptom": "headache"}
+    - slot{"symptom1": "vomitings"}
+    - utter_ask_symptoms
+* request disease{"symptom2": "jaundice"}
+    - slot{"symptom2": "jaundice"}
+    - action_disease
+    - slot{"disease": "Hepatitis"}
+* thanks
+    - utter_thanks
+
+## interactive_story_1
+* greetings
+    - utter_greet
+    - utter_ask_name
+* give Information{"name": "suresh"}
+    - slot{"name": "suresh"}
+    - utter_howcanhelp
+* request disease{"symptom1": "cold"}
+    - slot{"symptom1": "cold"}
+    - utter_ask_symptoms
+* request disease{"symptom": "body pains"}
+    - slot{"symptom": "body pains"}
+    - action_disease
+* thanks
+    - utter_thanks
+
+## interactive_story_1
+* greetings
+    - utter_greet
+    - utter_ask_name
+* give Information{"name": "gayathri"}
+    - slot{"name": "gayathri"}
+    - utter_howcanhelp
+* request disease{"symptom1": "vomitings"}
+    - slot{"symptom1": "vomitings"}
+    - utter_ask_symptoms
+* request disease{"symptom2": "jaundice"}
+    - slot{"symptom2": "jaundice"}
+    - action_disease
+    - slot{"disease": "Hepatitis"}
+
+## interactive_story_1
+* bot_challenge
+    - utter_iamabot
+    - utter_howcanhelp
+* request disease{"symptom": "nasal discharge", "symptom1": "dry cough"}
+    - slot{"symptom": "nasal discharge"}
+    - slot{"symptom1": "dry cough"}
+    - utter_ask_symptoms
+* request disease{"symptom2": "sore throat"}
+    - slot{"symptom2": "sore throat"}
+    - action_disease
+    - slot{"disease": "Influenza (flu)"}
+* accept
+    - utter_goodbye

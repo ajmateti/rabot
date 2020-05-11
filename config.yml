@@ -24,5 +24,7 @@ policies:
     max_history: 3
     epochs: 100
   - name: MappingPolicy
-  - name: FormPolicy
+  - name: TwoStageFallbackPolicy
+    fallback_nlu_action_name: utter_nlufallback
+    fallback_core_action_name: utter_corefallback
 

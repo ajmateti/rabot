@@ -46,6 +46,7 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+- hey,are you bot?
 
 ## intent:accept
 - ok
@@ -66,6 +67,9 @@
 - I am [23 years](age) old[ male](gender)
 - I am [harish](name),located in [hyderabad](place)
 - [hari](name)
+- [rajesh](name)
+- I am [suresh](name)
+- i am [gayathri](name)
 
 ## intent:greetings
 - hello
@@ -80,6 +84,8 @@
 - hello [bot](name)
 - iam [harish][](name)
 - hi ,i am [chandu](name)
+- hi
+- hey,hi
 
 ## intent:prescription
 - what [tablets](medicine) should I use?
@@ -95,6 +101,19 @@
 - [redness of eyes](symptom2)
 - i also have [light sensitivity](symptom1)
 - suffering from [irritation of eyes](symptom),red[ness of eyes an](symptom2:redness of eyes)d [light sensitivity](symptom1)
+- gone through [vomitings](symptom1) and severe [headache](symptom)
+- I may have [jaundice](symptom2)
+- hi ,i am suffering from [cold](symptom1) and [headache](symptom).please provide prescription
+- suffering from [cold](symptom1)
+- suffering from little [cold](symptom1)
+- hi,i am suffering from [fever](symptom)
+- [headache](symptom)
+- I am suffering from [cold](symptom1)
+- I also have little [body pains](symptom)
+- gone through [vomitings](symptom1) since morning
+- i may have [jaundice](symptom2)
+- from two suffering from [nasal discharge](symptom) and [dry cough](symptom1)
+- i also have mild [sore throat](symptom2)
 
 ## intent:thanks
 - thanks
@@ -102,16 +121,13 @@
 - thank you very much
 - thank you so  much
 
-## intent:request disease,prescription
-- hi ,i am suffering from [cold](symptom1) and [headache](symptom).please provide prescription
-- suffering from [cold](symptom1)
-- suffering from little [cold](symptom1)
-- hi,i am suffering from [fever](symptom)
-- [headache](symptom)
-
 ## synonym:breathing
 - respiratory
 - resp
 
 ## synonym:malaise
 - not feeling well
+
+## synonym:redness of eyes
+- ness of eyes an
+- redness of eyes

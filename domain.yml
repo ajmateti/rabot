@@ -1,43 +1,48 @@
-actions:
-- action_disease
-- action_is_bot
-- symptoms_form
-- utter_ask_age
-- utter_ask_name
-- utter_ask_symptoms
-- utter_book_appointment
-- utter_default
-- utter_did_that_help
-- utter_goodbye
-- utter_greet
-- utter_happy
-- utter_howcanhelp
-- utter_iamabot
-- utter_submit
-- utter_thanks
-entities:
-- disease
-- name
-- symptom
-- symptom1
-- symptom2
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
-- request disease
-- greetings
-- thanks
-- give Information
-- request disease,prescription
-- goodbye
 - accept
+- request disease
+- bot_challenge
+- greetings
+- give Information
+- thanks
+- goodbye
 - affirm
 - deny
 - mood_unhappy
-- bot_challenge
 - request information
 - ask Information
 - prescription
 - mood_great
 - book appointment
+- out_of_scope
+entities:
+- age
+- disease
+- gender
+- medicine
+- name
+- place
+- symptom
+- symptom1
+- symptom2
+slots:
+  disease:
+    type: text
+  name:
+    type: text
+    initial_value: User
+  symptom:
+    type: text
+    initial_value: Related symptoms
+  symptom1:
+    type: text
+    initial_value: Related symptoms
+  symptom2:
+    type: text
+    initial_value: Related symptoms
 responses:
   utter_ask_age:
   - text: How old are you?
@@ -47,6 +52,8 @@ responses:
   - text: please tell me if you have any other issues.
   utter_book_appointment:
   - text: Do you want to make an appointment with our doctor?
+  utter_corefallback:
+  - text: Disease prediction for your symptoms is not in scope of this bot.
   utter_default:
   - text: without testing I am unable to find a conclusion to your condition.
   - text: looks like your symptoms are out of scope this chat bot. shall I book your
@@ -59,30 +66,34 @@ responses:
   - text: Take care of your health.Bye!
   utter_greet:
   - text: hello {name}!
-  - text: How may I assist you?
   - text: Hello !
   utter_happy:
   - text: Great, carry on!
   utter_howcanhelp:
-  - text: Hello {name}! How can I help?
-  - text: Hi,I am your health care assistant.How can I help you?
+  - text: Hey what made you visit me
   utter_iamabot:
   - text: Yes,I am a bot.
+  utter_nlufallback:
+  - text: Sorry, I am not sure I have understand that. can you rephrase that
   utter_submit:
   - text: output
   utter_thanks:
   - text: MY pleasure
-session_config:
-  carry_over_slots_to_new_session: true
-  session_expiration_time: 60
-slots:
-  disease:
-    type: unfeaturized
-  name:
-    type: unfeaturized
-  symptom:
-    type: unfeaturized
-  symptom1:
-    type: unfeaturized
-  symptom2:
-    type: unfeaturized
+actions:
+- action_disease
+- action_is_bot
+- utter_ask_age
+- utter_ask_name
+- utter_ask_symptoms
+- utter_book_appointment
+- utter_corefallback
+- utter_default
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_howcanhelp
+- utter_iamabot
+- utter_nlufallback
+- utter_submit
+- utter_thanks

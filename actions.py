@@ -13,6 +13,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import pandas as pd
 
+
 filen = "C:\\pyth\\pyhton\\rabot\\chart symptoms1.xlsx"
 df = pd.read_excel(filen)
 
@@ -24,7 +25,7 @@ df = pd.read_excel(filen)
 # symptom1='irritation of eyes'
 # symptom2='light sensitivity'
 
-def passing(symp, symp1, symp2):
+def passing(symp,symp1,symp2):
     def final_index(out):
         return max(set(out), key=out.count)
     out = []
@@ -85,11 +86,9 @@ class Medical(Action):
         symptom1 = tracker.get_slot("symptom1")
         symptom2 = tracker.get_slot("symptom2")
         name = tracker.get_slot("name")
-        passing(symptom, symptom1, symptom2)
-
+        passing(symptom,symptom1,symptom2)
         if disease:
-            dispatcher.utter_message(
-                "hey,by your symptoms of {},{},{} you may have {}".format(symptom, symptom1, symptom2, disease))
+            dispatcher.utter_message("hey,by your symptoms of {},{},{} you may have {}".format(symptom, symptom1, symptom2, disease))
         else:
             dispatcher.utter_template("utter_default", tracker)
 

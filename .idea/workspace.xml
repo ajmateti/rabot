@@ -2,13 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cccd2317-155e-41a3-80c2-3ec296d2398e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/events.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/events.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/events.db-wal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/20200430-190400.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/20200430-192914.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/20200430-194038.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/20200430-215549.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/20200430-221751.tar.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rasa.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart symptoms1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/chart symptoms1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nlu.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/stories.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200323-200910.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200323-203622.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200328-092832.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200328-173532.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200328-202314.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200328-210012.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200328-212052.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200328-220231.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200329-085946.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200329-145036.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/models/20200430-153048.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200329-183400.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/models/20200430-184043.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200329-184947.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200329-203346.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200329-205806.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/20200330-091300.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200328-092458.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200328-185037.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200328-185425.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200328-190611.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200328-190839.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200329-135610.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200329-141307.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200329-142040.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200329-142503.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200329-143029.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/nlu-20200329-175307.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/story_graph.dot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="rabot" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,7 +72,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tki/Telugu-Question-Answering-master(1)/Telugu-Question-Answering-master/Telugu-Question-Answering-master" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
